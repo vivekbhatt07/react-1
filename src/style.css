@@ -14,11 +14,12 @@ body {
   align-items: center;
   justify-content: space-between;
   background: #21222a;
-  height: 80px;
+  height: 15vh;
   padding: 20px 15px; }
   .nav__left {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   .nav__img {
     width: 30px; }
   .nav__logo {
@@ -28,3 +29,23 @@ body {
   .nav__text {
     color: #deebf8;
     font-size: 15px; }
+
+.main {
+  background: url(../src/Assets/bglogo.svg) center right no-repeat;
+  background-color: #282d35;
+  height: 85vh; }
+  .main__head {
+    color: #fff;
+    padding-top: 30px;
+    padding-left: 40px;
+    font-size: 60px; }
+  .main__list {
+    color: #fff;
+    padding-top: 30px;
+    padding-left: 80px;
+    font-size: 25px; }
+  .main__item {
+    padding-bottom: 20px; }
+    .main__item::marker {
+      color: #61dafb;
+      font-size: 30px; }

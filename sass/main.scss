@@ -1,6 +1,7 @@
 $logo-color: #61dafb;
 $nav-color: #21222a;
 $right-nav: #deebf8;
+$bg-color: #282d35;
 
 *,
 *::before,
@@ -23,7 +24,7 @@ body {
 .nav {
   @include flex(space-between);
   background: $nav-color;
-  height: 80px;
+  height: 15vh;
   padding: 20px 15px;
 
   &__left {
@@ -43,5 +44,35 @@ body {
   &__text {
     color: $right-nav;
     font-size: 15px;
+  }
+}
+
+@mixin common($top-pad, $left-pad, $font-s) {
+  color: #fff;
+  padding-top: $top-pad;
+  padding-left: $left-pad;
+  font-size: $font-s;
+}
+
+.main {
+  background: url(../src/Assets/bglogo.svg) center right no-repeat;
+  background-color: $bg-color;
+  height: 85vh;
+
+  &__head {
+    @include common(30px, 40px, 60px);
+  }
+
+  &__list {
+    @include common(30px, 80px, 25px);
+  }
+
+  &__item {
+    padding-bottom: 20px;
+
+    &::marker {
+      color: $logo-color;
+      font-size: 30px;
+    }
   }
 }

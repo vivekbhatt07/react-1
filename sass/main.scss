@@ -1,4 +1,6 @@
 $logo-color: #61dafb;
+$nav-color: #21222a;
+$right-nav: #deebf8;
 
 *,
 *::before,
@@ -10,4 +12,36 @@ $logo-color: #61dafb;
 
 body {
   font-family: "Inter", sans-serif;
+  height: 100vh;
+}
+
+@mixin flex($just) {
+  display: flex;
+  align-items: center;
+  justify-content: $just;
+}
+.nav {
+  @include flex(space-between);
+  background: $nav-color;
+  height: 80px;
+  padding: 20px 15px;
+
+  &__left {
+    @include flex(center);
+  }
+
+  &__img {
+    width: 30px;
+  }
+
+  &__logo {
+    color: $logo-color;
+    margin-left: 10px;
+    font-size: 19px;
+  }
+
+  &__text {
+    color: $right-nav;
+    font-size: 15px;
+  }
 }

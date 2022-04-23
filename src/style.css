@@ -6,4 +6,25 @@
   padding: 0; }
 
 body {
-  font-family: "Inter", sans-serif; }
+  font-family: "Inter", sans-serif;
+  height: 100vh; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #21222a;
+  height: 80px;
+  padding: 20px 15px; }
+  .nav__left {
+    display: flex;
+    align-items: center; }
+  .nav__img {
+    width: 30px; }
+  .nav__logo {
+    color: #61dafb;
+    margin-left: 10px;
+    font-size: 19px; }
+  .nav__text {
+    color: #deebf8;
+    font-size: 15px; }
